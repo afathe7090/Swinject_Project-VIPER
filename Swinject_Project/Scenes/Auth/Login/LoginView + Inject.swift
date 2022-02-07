@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwinjectAutoregistration
 import Swinject
 
 extension Container{

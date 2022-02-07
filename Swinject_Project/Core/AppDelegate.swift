@@ -7,7 +7,6 @@
 
 import UIKit
 import Swinject
-import SwinjectAutoregistration
 
 let container = Container()
 

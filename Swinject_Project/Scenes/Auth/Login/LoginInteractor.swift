@@ -6,8 +6,12 @@
 //
 
 import Foundation
-
+import RxSwift
 
 class LoginInteractor: LoginInputInteractor{
-    var presenter: LoginOutputInteractor? 
+    var presenter: LoginOutputInteractor?
+    
+    private let authFirebase = container.resolve(FirebaseWorker.self)
+    
+    
 }

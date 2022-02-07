@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		749E6FFF27B1D973008A7BCD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E6FFE27B1D973008A7BCD /* UIFont.swift */; };
+		749E700127B1D97C008A7BCD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E700027B1D97C008A7BCD /* UIImage+Extension.swift */; };
+		749E700627B1D9BA008A7BCD /* APiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E700527B1D9BA008A7BCD /* APiNetworking.swift */; };
+		749E700927B1D9D0008A7BCD /* AuthFirebaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E700727B1D9D0008A7BCD /* AuthFirebaseLayer.swift */; };
+		749E700A27B1D9D0008A7BCD /* FirebaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E700827B1D9D0008A7BCD /* FirebaseWorker.swift */; };
+		749E701427B1DDF1008A7BCD /* Firebase+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E701327B1DDF1008A7BCD /* Firebase+Injection.swift */; };
 		74BCF18427B18EE40096E583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF18327B18EE40096E583 /* AppDelegate.swift */; };
 		74BCF18627B18EE50096E583 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF18527B18EE50096E583 /* SceneDelegate.swift */; };
 		74BCF18D27B18EE70096E583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BCF18C27B18EE70096E583 /* Assets.xcassets */; };
 		74BCF19027B18EE70096E583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74BCF18E27B18EE70096E583 /* LaunchScreen.storyboard */; };
-		74BCF19927B18F3E0096E583 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 74BCF19827B18F3E0096E583 /* Swinject */; };
-		74BCF19C27B18F9C0096E583 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 74BCF19B27B18F9C0096E583 /* SwinjectAutoregistration */; };
 		74BCF1A527B1902B0096E583 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1A327B1902B0096E583 /* LoginViewController.swift */; };
-		74BCF1A627B1902B0096E583 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74BCF1A427B1902B0096E583 /* LoginViewController.xib */; };
 		74BCF1A927B1904D0096E583 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1A827B1904D0096E583 /* LoginPresenter.swift */; };
 		74BCF1AB27B190640096E583 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1AA27B190640096E583 /* LoginInteractor.swift */; };
 		74BCF1AD27B192580096E583 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1AC27B192580096E583 /* LoginProtocols.swift */; };
@@ -26,11 +29,20 @@
 		74BCF1BB27B1AD730096E583 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1BA27B1AD730096E583 /* RegisterRouter.swift */; };
 		74BCF1BD27B1AD8B0096E583 /* RegiseterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1BC27B1AD8B0096E583 /* RegiseterPresenter.swift */; };
 		74BCF1C027B1AE630096E583 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1BE27B1AE630096E583 /* RegisterViewController.swift */; };
-		74BCF1C127B1AE630096E583 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74BCF1BF27B1AE630096E583 /* RegisterViewController.xib */; };
 		74BCF1C327B1AEBB0096E583 /* RegisterView + Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCF1C227B1AEBB0096E583 /* RegisterView + Inject.swift */; };
+		E33B936A2F494C74537FB6B0 /* Pods_Swinject_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0138AFE506E57A278F67DDFA /* Pods_Swinject_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0138AFE506E57A278F67DDFA /* Pods_Swinject_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swinject_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E66237E10826159045BFAF6 /* Pods-Swinject_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject_Project.release.xcconfig"; path = "Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project.release.xcconfig"; sourceTree = "<group>"; };
+		4A774DE7F80A36B05F3AF579 /* Pods-Swinject_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject_Project.debug.xcconfig"; path = "Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		749E6FFE27B1D973008A7BCD /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		749E700027B1D97C008A7BCD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		749E700527B1D9BA008A7BCD /* APiNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APiNetworking.swift; sourceTree = "<group>"; };
+		749E700727B1D9D0008A7BCD /* AuthFirebaseLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFirebaseLayer.swift; sourceTree = "<group>"; };
+		749E700827B1D9D0008A7BCD /* FirebaseWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseWorker.swift; sourceTree = "<group>"; };
+		749E701327B1DDF1008A7BCD /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
 		74BCF18027B18EE40096E583 /* Swinject_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swinject_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BCF18327B18EE40096E583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74BCF18527B18EE50096E583 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +50,6 @@
 		74BCF18F27B18EE70096E583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74BCF19127B18EE70096E583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74BCF1A327B1902B0096E583 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		74BCF1A427B1902B0096E583 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		74BCF1A827B1904D0096E583 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		74BCF1AA27B190640096E583 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		74BCF1AC27B192580096E583 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
@@ -50,7 +61,6 @@
 		74BCF1BA27B1AD730096E583 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		74BCF1BC27B1AD8B0096E583 /* RegiseterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegiseterPresenter.swift; sourceTree = "<group>"; };
 		74BCF1BE27B1AE630096E583 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		74BCF1BF27B1AE630096E583 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		74BCF1C227B1AEBB0096E583 /* RegisterView + Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterView + Inject.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,19 +69,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74BCF19927B18F3E0096E583 /* Swinject in Frameworks */,
-				74BCF19C27B18F9C0096E583 /* SwinjectAutoregistration in Frameworks */,
+				E33B936A2F494C74537FB6B0 /* Pods_Swinject_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		749E6FFD27B1D960008A7BCD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				749E6FFE27B1D973008A7BCD /* UIFont.swift */,
+				749E700027B1D97C008A7BCD /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		749E700227B1D980008A7BCD /* FManabger */ = {
+			isa = PBXGroup;
+			children = (
+				749E700727B1D9D0008A7BCD /* AuthFirebaseLayer.swift */,
+				749E700827B1D9D0008A7BCD /* FirebaseWorker.swift */,
+				749E701327B1DDF1008A7BCD /* Firebase+Injection.swift */,
+			);
+			path = FManabger;
+			sourceTree = "<group>";
+		};
+		749E700427B1D997008A7BCD /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				749E700527B1D9BA008A7BCD /* APiNetworking.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		74BCF17727B18EE40096E583 = {
 			isa = PBXGroup;
 			children = (
 				74BCF18227B18EE40096E583 /* Swinject_Project */,
 				74BCF18127B18EE40096E583 /* Products */,
+				F796A49881269D92850D4F13 /* Pods */,
+				7896401A7B38970BDAA724A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				74BCF19D27B18FA80096E583 /* Core */,
+				749E700427B1D997008A7BCD /* NetworkManager */,
+				749E700227B1D980008A7BCD /* FManabger */,
+				749E6FFD27B1D960008A7BCD /* Extension */,
 				74BCF19F27B18FC30096E583 /* DI */,
 				74BCF1A027B18FC80096E583 /* Scenes */,
 				74BCF19E27B18FB50096E583 /* Resources */,
@@ -132,8 +173,8 @@
 		74BCF1A127B18FD90096E583 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				74BCF1B527B1AD2A0096E583 /* Register */,
 				74BCF1A227B1900A0096E583 /* Login */,
+				74BCF1B527B1AD2A0096E583 /* Register */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -141,7 +182,6 @@
 		74BCF1A227B1900A0096E583 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				74BCF1A427B1902B0096E583 /* LoginViewController.xib */,
 				74BCF1A327B1902B0096E583 /* LoginViewController.swift */,
 				74BCF1A827B1904D0096E583 /* LoginPresenter.swift */,
 				74BCF1AA27B190640096E583 /* LoginInteractor.swift */,
@@ -168,10 +208,26 @@
 				74BCF1BA27B1AD730096E583 /* RegisterRouter.swift */,
 				74BCF1BC27B1AD8B0096E583 /* RegiseterPresenter.swift */,
 				74BCF1BE27B1AE630096E583 /* RegisterViewController.swift */,
-				74BCF1BF27B1AE630096E583 /* RegisterViewController.xib */,
 				74BCF1C227B1AEBB0096E583 /* RegisterView + Inject.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		7896401A7B38970BDAA724A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0138AFE506E57A278F67DDFA /* Pods_Swinject_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F796A49881269D92850D4F13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A774DE7F80A36B05F3AF579 /* Pods-Swinject_Project.debug.xcconfig */,
+				1E66237E10826159045BFAF6 /* Pods-Swinject_Project.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,19 +237,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74BCF19427B18EE70096E583 /* Build configuration list for PBXNativeTarget "Swinject_Project" */;
 			buildPhases = (
+				3A63C638707D144B28E75746 /* [CP] Check Pods Manifest.lock */,
 				74BCF17C27B18EE40096E583 /* Sources */,
 				74BCF17D27B18EE40096E583 /* Frameworks */,
 				74BCF17E27B18EE40096E583 /* Resources */,
+				5CA967CFD2ACC5C825009122 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Swinject_Project;
-			packageProductDependencies = (
-				74BCF19827B18F3E0096E583 /* Swinject */,
-				74BCF19B27B18F9C0096E583 /* SwinjectAutoregistration */,
-			);
 			productName = Swinject_Project;
 			productReference = 74BCF18027B18EE40096E583 /* Swinject_Project.app */;
 			productType = "com.apple.product-type.application";
@@ -222,10 +276,6 @@
 				Base,
 			);
 			mainGroup = 74BCF17727B18EE40096E583;
-			packageReferences = (
-				74BCF19727B18F3E0096E583 /* XCRemoteSwiftPackageReference "Swinject" */,
-				74BCF19A27B18F9C0096E583 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
-			);
 			productRefGroup = 74BCF18127B18EE40096E583 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,12 +292,52 @@
 			files = (
 				74BCF19027B18EE70096E583 /* LaunchScreen.storyboard in Resources */,
 				74BCF18D27B18EE70096E583 /* Assets.xcassets in Resources */,
-				74BCF1A627B1902B0096E583 /* LoginViewController.xib in Resources */,
-				74BCF1C127B1AE630096E583 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A63C638707D144B28E75746 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swinject_Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA967CFD2ACC5C825009122 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74BCF17C27B18EE40096E583 /* Sources */ = {
@@ -259,13 +349,19 @@
 				74BCF1B727B1AD3E0096E583 /* RegisterProtocol.swift in Sources */,
 				74BCF1A527B1902B0096E583 /* LoginViewController.swift in Sources */,
 				74BCF18427B18EE40096E583 /* AppDelegate.swift in Sources */,
+				749E700927B1D9D0008A7BCD /* AuthFirebaseLayer.swift in Sources */,
 				74BCF1BD27B1AD8B0096E583 /* RegiseterPresenter.swift in Sources */,
 				74BCF1BB27B1AD730096E583 /* RegisterRouter.swift in Sources */,
 				74BCF1AD27B192580096E583 /* LoginProtocols.swift in Sources */,
 				74BCF1C327B1AEBB0096E583 /* RegisterView + Inject.swift in Sources */,
+				749E701427B1DDF1008A7BCD /* Firebase+Injection.swift in Sources */,
 				74BCF1AB27B190640096E583 /* LoginInteractor.swift in Sources */,
+				749E700627B1D9BA008A7BCD /* APiNetworking.swift in Sources */,
 				74BCF1C027B1AE630096E583 /* RegisterViewController.swift in Sources */,
 				74BCF1AF27B193600096E583 /* LoginRouter.swift in Sources */,
+				749E700A27B1D9D0008A7BCD /* FirebaseWorker.swift in Sources */,
+				749E700127B1D97C008A7BCD /* UIImage+Extension.swift in Sources */,
+				749E6FFF27B1D973008A7BCD /* UIFont.swift in Sources */,
 				74BCF1B927B1AD5F0096E583 /* RegisterInteractor.swift in Sources */,
 				74BCF18627B18EE50096E583 /* SceneDelegate.swift in Sources */,
 				74BCF1B127B193990096E583 /* LoginView + Inject.swift in Sources */,
@@ -404,6 +500,7 @@
 		};
 		74BCF19527B18EE70096E583 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A774DE7F80A36B05F3AF579 /* Pods-Swinject_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,6 +528,7 @@
 		};
 		74BCF19627B18EE70096E583 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E66237E10826159045BFAF6 /* Pods-Swinject_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,38 +576,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		74BCF19727B18F3E0096E583 /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		74BCF19A27B18F9C0096E583 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		74BCF19827B18F3E0096E583 /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74BCF19727B18F3E0096E583 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
-		};
-		74BCF19B27B18F9C0096E583 /* SwinjectAutoregistration */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74BCF19A27B18F9C0096E583 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
-			productName = SwinjectAutoregistration;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74BCF17827B18EE40096E583 /* Project object */;
 }

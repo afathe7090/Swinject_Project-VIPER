@@ -6,7 +6,6 @@
 //
 
 import Swinject
-import SwinjectAutoregistration
 import UIKit
 
 extension Container{
