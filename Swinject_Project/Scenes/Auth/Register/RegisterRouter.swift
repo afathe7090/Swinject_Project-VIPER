@@ -10,9 +10,13 @@ import UIKit
 
 
 class RegisterRouter : RegisterRouterProtocol{
+ 
+    
     weak var viewController: UIViewController?
     
     
-    
+    func returnBackToLogin_From_Router() {
+        viewController?.dismiss(animated: true, completion: nil)
+    }
     
 }

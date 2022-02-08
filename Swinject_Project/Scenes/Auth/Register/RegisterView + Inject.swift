@@ -21,6 +21,7 @@ extension Container{
         register(RegisterInteractor.self) { (resolver, presenter: RegisterOutputInteractorProtocol) in
             let interactor = RegisterInteractor()
             interactor.presenter = presenter
+            interactor.firebaseWorker = resolver.resolve(FirebaseWorker.self)
             return interactor
         }
         
