@@ -12,7 +12,9 @@ class LoginRouter: LoginRouterProtocol {
     
     weak var view: UIViewController?
     
-    func build(){
-        print("In Router Build")
+    func startWithRegisterView(){
+        guard let registerVC = container.resolve(RegisterViewController.self) else { return }
+        registerVC.modalPresentationStyle = .fullScreen
+        view?.present(registerVC, animated: true, completion: nil)
     }
 }

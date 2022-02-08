@@ -10,7 +10,12 @@ import Swinject
 
 extension Container {
     func regiserDependency(){
-        loginDependanctInjection()
-        registerViewDependancyInjection()
+        // modules of scenes inject
+        loginDependanctInjectionContainer()
+        registerViewDependancyInjectionContainer()
+        
+        // api and firebase inject models
+        firebaseDependencyInjectionContainer()
+        apiWorkerDependencyInjectionContainer()
     }
 }

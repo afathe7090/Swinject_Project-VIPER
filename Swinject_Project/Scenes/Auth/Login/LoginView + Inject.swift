@@ -10,11 +10,12 @@ import Swinject
 
 extension Container{
     
-    func loginDependanctInjection(){
+    func loginDependanctInjectionContainer(){
 
         register(LoginInteractor.self) { (resolver , presenter: LoginPresenter ) in
             let interactor = LoginInteractor()
             interactor.presenter = presenter
+            interactor.authFirebase = resolver.resolve(FirebaseWorker.self)
             return interactor
         }
         

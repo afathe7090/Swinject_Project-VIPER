@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 
 extension Container {
-    func firebaseInjections(){
+    func firebaseDependencyInjectionContainer(){
         
         register(FirebaseAuth.self) { r in
             return FirebaseAuthLayer()

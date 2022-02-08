@@ -14,7 +14,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
 
     var presenter: LoginPresenterProtocol!
     
-    
+    private let bag = DisposeBag()
     
     //MARK: - Design
     private lazy var TitleOfHelloLabel: UILabel = {
@@ -151,6 +151,9 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         super.viewDidLoad()
         presenter.viewDidLoad()
         TaskLayOut()
+        setLoginButtonAction()
+        startbindingTextField()
+        setRegisterButtonAction()
     }
     
     
@@ -217,5 +220,47 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         ])
     }
     
+    
+    //----------------------------------------------------------------------------------------------------------------
+    //=======>MARK: -  Actions
+    //----------------------------------------------------------------------------------------------------------------
+    
+    func startbindingTextField(){
+        emailTextField.rx.text.orEmpty.bind(to: presenter.emailBehavior).disposed(by: bag)
+        passwordTextField.rx.text.orEmpty.bind(to: presenter.passwordBehavior).disposed(by: bag)
+    }
+    
+    
+    func setLoginButtonAction(){
+        loginButton.rx.tap
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.presenter.setLoginWithFirebase()
+        }).disposed(by: bag)
+    }
+    
+    func setRegisterButtonAction(){
+        registerButton.rx.tap.observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.presenter.goToRegisterView()
+            }).disposed(by: bag)
+    }
+    
+    
+    
+    //----------------------------------------------------------------------------------------------------------------
+    //=======>MARK: -  change In UI
+    //----------------------------------------------------------------------------------------------------------------
 
+    
+    func showIndectorView(state: Bool){
+        state ? Hud.showHud(in: view):Hud.dismiss()
+    }
+    
+    func changeStateOFLoginButton(state: Bool){
+        loginButton.isEnabled = state
+        loginButton.alpha = state ? 1:0.5
+    }
 }

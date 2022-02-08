@@ -10,7 +10,7 @@ import UIKit
 
 extension Container{
     
-    func registerViewDependancyInjection(){
+    func registerViewDependancyInjectionContainer(){
         
         register(RegisterRouter.self) { (r, viewController: RegisterViewController) in
             let router = RegisterRouter()

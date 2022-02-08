@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7474824527B2B3C500B98A3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7474824427B2B3C500B98A3B /* GoogleService-Info.plist */; };
+		7474824727B2B59F00B98A3B /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474824627B2B59E00B98A3B /* Hud.swift */; };
+		7474824A27B2BAEF00B98A3B /* ApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474824927B2BAEF00B98A3B /* ApiWorker.swift */; };
+		7474824C27B2BB2500B98A3B /* APiWorker+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474824B27B2BB2500B98A3B /* APiWorker+Injection.swift */; };
+		7474824F27B2BBAF00B98A3B /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474824E27B2BBAF00B98A3B /* ArticleModel.swift */; };
 		749E6FFF27B1D973008A7BCD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E6FFE27B1D973008A7BCD /* UIFont.swift */; };
 		749E700127B1D97C008A7BCD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E700027B1D97C008A7BCD /* UIImage+Extension.swift */; };
 		749E700627B1D9BA008A7BCD /* APiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E700527B1D9BA008A7BCD /* APiNetworking.swift */; };
@@ -37,6 +42,11 @@
 		0138AFE506E57A278F67DDFA /* Pods_Swinject_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swinject_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E66237E10826159045BFAF6 /* Pods-Swinject_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject_Project.release.xcconfig"; path = "Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project.release.xcconfig"; sourceTree = "<group>"; };
 		4A774DE7F80A36B05F3AF579 /* Pods-Swinject_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject_Project.debug.xcconfig"; path = "Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		7474824427B2B3C500B98A3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7474824627B2B59E00B98A3B /* Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
+		7474824927B2BAEF00B98A3B /* ApiWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiWorker.swift; sourceTree = "<group>"; };
+		7474824B27B2BB2500B98A3B /* APiWorker+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APiWorker+Injection.swift"; sourceTree = "<group>"; };
+		7474824E27B2BBAF00B98A3B /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		749E6FFE27B1D973008A7BCD /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		749E700027B1D97C008A7BCD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		749E700527B1D9BA008A7BCD /* APiNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APiNetworking.swift; sourceTree = "<group>"; };
@@ -76,6 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7474824827B2B5A200B98A3B /* Helper  */ = {
+			isa = PBXGroup;
+			children = (
+				7474824627B2B59E00B98A3B /* Hud.swift */,
+			);
+			path = "Helper ";
+			sourceTree = "<group>";
+		};
+		7474824D27B2BBAF00B98A3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7474824E27B2BBAF00B98A3B /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		749E6FFD27B1D960008A7BCD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				749E700527B1D9BA008A7BCD /* APiNetworking.swift */,
+				7474824927B2BAEF00B98A3B /* ApiWorker.swift */,
+				7474824B27B2BB2500B98A3B /* APiWorker+Injection.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -125,12 +153,15 @@
 			isa = PBXGroup;
 			children = (
 				74BCF19D27B18FA80096E583 /* Core */,
+				7474824D27B2BBAF00B98A3B /* Model */,
 				749E700427B1D997008A7BCD /* NetworkManager */,
 				749E700227B1D980008A7BCD /* FManabger */,
+				7474824827B2B5A200B98A3B /* Helper  */,
 				749E6FFD27B1D960008A7BCD /* Extension */,
 				74BCF19F27B18FC30096E583 /* DI */,
 				74BCF1A027B18FC80096E583 /* Scenes */,
 				74BCF19E27B18FB50096E583 /* Resources */,
+				7474824427B2B3C500B98A3B /* GoogleService-Info.plist */,
 				74BCF19127B18EE70096E583 /* Info.plist */,
 			);
 			path = Swinject_Project;
@@ -292,6 +323,7 @@
 			files = (
 				74BCF19027B18EE70096E583 /* LaunchScreen.storyboard in Resources */,
 				74BCF18D27B18EE70096E583 /* Assets.xcassets in Resources */,
+				7474824527B2B3C500B98A3B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,14 +382,18 @@
 				74BCF1A527B1902B0096E583 /* LoginViewController.swift in Sources */,
 				74BCF18427B18EE40096E583 /* AppDelegate.swift in Sources */,
 				749E700927B1D9D0008A7BCD /* AuthFirebaseLayer.swift in Sources */,
+				7474824F27B2BBAF00B98A3B /* ArticleModel.swift in Sources */,
 				74BCF1BD27B1AD8B0096E583 /* RegiseterPresenter.swift in Sources */,
 				74BCF1BB27B1AD730096E583 /* RegisterRouter.swift in Sources */,
 				74BCF1AD27B192580096E583 /* LoginProtocols.swift in Sources */,
 				74BCF1C327B1AEBB0096E583 /* RegisterView + Inject.swift in Sources */,
 				749E701427B1DDF1008A7BCD /* Firebase+Injection.swift in Sources */,
+				7474824727B2B59F00B98A3B /* Hud.swift in Sources */,
 				74BCF1AB27B190640096E583 /* LoginInteractor.swift in Sources */,
 				749E700627B1D9BA008A7BCD /* APiNetworking.swift in Sources */,
+				7474824C27B2BB2500B98A3B /* APiWorker+Injection.swift in Sources */,
 				74BCF1C027B1AE630096E583 /* RegisterViewController.swift in Sources */,
+				7474824A27B2BAEF00B98A3B /* ApiWorker.swift in Sources */,
 				74BCF1AF27B193600096E583 /* LoginRouter.swift in Sources */,
 				749E700A27B1D9D0008A7BCD /* FirebaseWorker.swift in Sources */,
 				749E700127B1D97C008A7BCD /* UIImage+Extension.swift in Sources */,
