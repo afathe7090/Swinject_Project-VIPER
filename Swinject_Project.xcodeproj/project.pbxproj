@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740F8E6E27B344D5006C5512 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E6D27B344D5006C5512 /* HomeViewController.swift */; };
+		740F8E7027B344E4006C5512 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E6F27B344E4006C5512 /* HomeProtocols.swift */; };
+		740F8E7227B344EF006C5512 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E7127B344EF006C5512 /* HomePresenter.swift */; };
+		740F8E7427B344F9006C5512 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E7327B344F9006C5512 /* HomeInteractor.swift */; };
+		740F8E7627B34503006C5512 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E7527B34503006C5512 /* HomeRouter.swift */; };
+		740F8E7827B34519006C5512 /* HomeView + Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E7727B34519006C5512 /* HomeView + Inject.swift */; };
+		740F8E7C27B345B7006C5512 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740F8E7B27B345B6006C5512 /* NewsCell.swift */; };
 		7474824527B2B3C500B98A3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7474824427B2B3C500B98A3B /* GoogleService-Info.plist */; };
 		7474824727B2B59F00B98A3B /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474824627B2B59E00B98A3B /* Hud.swift */; };
 		7474824A27B2BAEF00B98A3B /* ApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474824927B2BAEF00B98A3B /* ApiWorker.swift */; };
@@ -42,6 +49,13 @@
 		0138AFE506E57A278F67DDFA /* Pods_Swinject_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swinject_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E66237E10826159045BFAF6 /* Pods-Swinject_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject_Project.release.xcconfig"; path = "Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project.release.xcconfig"; sourceTree = "<group>"; };
 		4A774DE7F80A36B05F3AF579 /* Pods-Swinject_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swinject_Project.debug.xcconfig"; path = "Target Support Files/Pods-Swinject_Project/Pods-Swinject_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		740F8E6D27B344D5006C5512 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		740F8E6F27B344E4006C5512 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		740F8E7127B344EF006C5512 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		740F8E7327B344F9006C5512 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		740F8E7527B34503006C5512 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		740F8E7727B34519006C5512 /* HomeView + Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView + Inject.swift"; sourceTree = "<group>"; };
+		740F8E7B27B345B6006C5512 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		7474824427B2B3C500B98A3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7474824627B2B59E00B98A3B /* Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
 		7474824927B2BAEF00B98A3B /* ApiWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiWorker.swift; sourceTree = "<group>"; };
@@ -86,6 +100,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		740F8E6C27B344C0006C5512 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				740F8E7927B34559006C5512 /* HomeCell */,
+				740F8E6D27B344D5006C5512 /* HomeViewController.swift */,
+				740F8E6F27B344E4006C5512 /* HomeProtocols.swift */,
+				740F8E7127B344EF006C5512 /* HomePresenter.swift */,
+				740F8E7327B344F9006C5512 /* HomeInteractor.swift */,
+				740F8E7527B34503006C5512 /* HomeRouter.swift */,
+				740F8E7727B34519006C5512 /* HomeView + Inject.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		740F8E7927B34559006C5512 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				740F8E7A27B345B6006C5512 /* TableViewCell */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		740F8E7A27B345B6006C5512 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				740F8E7B27B345B6006C5512 /* NewsCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		7474824827B2B5A200B98A3B /* Helper  */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				74BCF1A127B18FD90096E583 /* Auth */,
+				740F8E6C27B344C0006C5512 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -376,21 +421,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740F8E7827B34519006C5512 /* HomeView + Inject.swift in Sources */,
 				74BCF1B427B193D10096E583 /* registrationDependency.swift in Sources */,
 				74BCF1A927B1904D0096E583 /* LoginPresenter.swift in Sources */,
 				74BCF1B727B1AD3E0096E583 /* RegisterProtocol.swift in Sources */,
 				74BCF1A527B1902B0096E583 /* LoginViewController.swift in Sources */,
 				74BCF18427B18EE40096E583 /* AppDelegate.swift in Sources */,
+				740F8E7C27B345B7006C5512 /* NewsCell.swift in Sources */,
 				749E700927B1D9D0008A7BCD /* AuthFirebaseLayer.swift in Sources */,
 				7474824F27B2BBAF00B98A3B /* ArticleModel.swift in Sources */,
+				740F8E7227B344EF006C5512 /* HomePresenter.swift in Sources */,
 				74BCF1BD27B1AD8B0096E583 /* RegiseterPresenter.swift in Sources */,
 				74BCF1BB27B1AD730096E583 /* RegisterRouter.swift in Sources */,
+				740F8E7427B344F9006C5512 /* HomeInteractor.swift in Sources */,
 				74BCF1AD27B192580096E583 /* LoginProtocols.swift in Sources */,
 				74BCF1C327B1AEBB0096E583 /* RegisterView + Inject.swift in Sources */,
+				740F8E6E27B344D5006C5512 /* HomeViewController.swift in Sources */,
 				749E701427B1DDF1008A7BCD /* Firebase+Injection.swift in Sources */,
+				740F8E7027B344E4006C5512 /* HomeProtocols.swift in Sources */,
 				7474824727B2B59F00B98A3B /* Hud.swift in Sources */,
 				74BCF1AB27B190640096E583 /* LoginInteractor.swift in Sources */,
 				749E700627B1D9BA008A7BCD /* APiNetworking.swift in Sources */,
+				740F8E7627B34503006C5512 /* HomeRouter.swift in Sources */,
 				7474824C27B2BB2500B98A3B /* APiWorker+Injection.swift in Sources */,
 				74BCF1C027B1AE630096E583 /* RegisterViewController.swift in Sources */,
 				7474824A27B2BAEF00B98A3B /* ApiWorker.swift in Sources */,

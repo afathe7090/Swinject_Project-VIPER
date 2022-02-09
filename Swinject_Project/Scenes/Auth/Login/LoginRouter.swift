@@ -11,9 +11,11 @@ import UIKit
 class LoginRouter: LoginRouterProtocol {
     
     weak var view: UIViewController?
+    var registerVC: RegisterViewController?
+    var homeVC: HomeViewController?
     
     func startWithRegisterView(){
-        guard let registerVC = container.resolve(RegisterViewController.self) else { return }
+        guard let registerVC = registerVC else { return }
         registerVC.modalPresentationStyle = .fullScreen
         view?.present(registerVC, animated: true, completion: nil)
     }

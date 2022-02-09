@@ -22,6 +22,8 @@ extension Container{
         register(LoginRouter.self) { (resolver , view: LoginViewController) in
             let router = LoginRouter()
             router.view = view
+            router.registerVC = resolver.resolve(RegisterViewController.self)
+            router.homeVC = resolver.resolve(HomeViewController.self)
             return router
         }
         

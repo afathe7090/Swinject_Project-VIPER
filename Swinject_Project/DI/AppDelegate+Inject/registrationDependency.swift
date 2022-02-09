@@ -13,6 +13,7 @@ extension Container {
         // modules of scenes inject
         loginDependanctInjectionContainer()
         registerViewDependancyInjectionContainer()
+        homeViewDependencyInjectionContainer()
         
         // api and firebase inject models
         firebaseDependencyInjectionContainer()
