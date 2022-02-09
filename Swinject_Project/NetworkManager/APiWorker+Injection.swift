@@ -17,7 +17,7 @@ extension Container{
         
         register(ApiWorker.self) { resolver in
             let apiWorker = ApiWorker()
-            apiWorker.apiSerivice = resolver.resolve(ApiServices.self)
+            apiWorker.apiSerivice = resolver.resolve(ApiServicesType.self)
             return apiWorker
         }
     }

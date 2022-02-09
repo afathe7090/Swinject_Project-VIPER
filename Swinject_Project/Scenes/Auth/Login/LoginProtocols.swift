@@ -28,6 +28,7 @@ protocol LoginPresenterProtocol: AnyObject {
 
 protocol LoginRouterProtocol{
     func startWithRegisterView()
+    func showHomeViewWhenSuccessToLogin()
 }
 
 protocol LoginInputInteractor: AnyObject {

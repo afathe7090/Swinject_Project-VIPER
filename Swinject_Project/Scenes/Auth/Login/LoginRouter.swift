@@ -19,4 +19,12 @@ class LoginRouter: LoginRouterProtocol {
         registerVC.modalPresentationStyle = .fullScreen
         view?.present(registerVC, animated: true, completion: nil)
     }
+    
+    func showHomeViewWhenSuccessToLogin(){
+        guard let homeVC = homeVC else { return }
+        let homeNav = UINavigationController(rootViewController: homeVC)
+        homeNav.modalPresentationStyle = .fullScreen
+        view?.present(homeNav, animated: true, completion: nil)
+    }
+    
 }

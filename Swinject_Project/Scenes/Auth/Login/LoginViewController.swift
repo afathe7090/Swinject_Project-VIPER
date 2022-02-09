@@ -151,9 +151,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         super.viewDidLoad()
         presenter.viewDidLoad()
         TaskLayOut()
-        setLoginButtonAction()
-        startbindingTextField()
-        setRegisterButtonAction()
+        taskAction()
     }
     
     
@@ -166,7 +164,6 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         setUserPassword()
         setSignInLayout()
         setRegisterButtonLayout()
-        showPasswordButtonAction()
     }
     
     
@@ -226,13 +223,24 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     //=======>MARK: -  Actions
     //----------------------------------------------------------------------------------------------------------------
     
-    func startbindingTextField(){
+    func taskAction(){
+        Task{
+            await startbindingTextField()
+            await setLoginButtonAction()
+            await setRegisterButtonAction()
+            await showPasswordButtonAction()
+        }
+    }
+    
+    
+    
+    func startbindingTextField() async {
         emailTextField.rx.text.orEmpty.bind(to: presenter.emailBehavior).disposed(by: bag)
         passwordTextField.rx.text.orEmpty.bind(to: presenter.passwordBehavior).disposed(by: bag)
     }
     
     
-    func setLoginButtonAction(){
+    func setLoginButtonAction() async {
         loginButton.rx.tap
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
@@ -241,8 +249,9 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         }).disposed(by: bag)
     }
     
-    func setRegisterButtonAction(){
-        registerButton.rx.tap.observe(on: MainScheduler.instance)
+    func setRegisterButtonAction() async {
+        registerButton.rx.tap
+            .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self else { return }
                 self.presenter.goToRegisterView()
@@ -250,8 +259,10 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     }
     
     
-    func showPasswordButtonAction(){
-        showPasswordButton.rx.tap.subscribe(onNext: {[weak self] _ in
+    func showPasswordButtonAction() async {
+        showPasswordButton.rx.tap
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: {[weak self] _ in
             guard let self = self else { return }
             self.passwordTextField.isSecureTextEntry = !self.passwordTextField.isSecureTextEntry
             self.showPasswordButton.setAttributedTitle(NSAttributedString(string: !self.passwordTextField.isSecureTextEntry ? "HIDE":"SHOW", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)]), for: .normal)

@@ -58,7 +58,10 @@ extension LoginPresenter{
     func successToLogin() {
         // go to home page and stop loading
         print("Success To login")
-        isLoadingBehavior.accept(false)
+        DispatchQueue.main.async {
+            self.isLoadingBehavior.accept(false)
+            self.router?.showHomeViewWhenSuccessToLogin()
+        }
     }
     
     func failToLogin(_ error: Error) {
