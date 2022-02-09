@@ -368,6 +368,8 @@ class RegisterViewController: UIViewController , RegisterViewProtocol{
             await emailBindingToPresenter()
             await registerActionsWithCreateUser()
             await loginBackButtonAction()
+            await setShowPasswordButtonAction()
+            await setShowRe_PasswordButtonAction()
         }
     }
     
@@ -395,6 +397,26 @@ class RegisterViewController: UIViewController , RegisterViewProtocol{
         }).disposed(by: bag)
     }
     
+    
+    private func setShowPasswordButtonAction() async{
+        showPasswordButton.rx.tap
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+            guard let self = self else { return }
+            self.passwordTextField.isSecureTextEntry = !self.passwordTextField.isSecureTextEntry
+            self.showPasswordButton.setAttributedTitle(NSAttributedString(string: !self.passwordTextField.isSecureTextEntry ? "HIDE":"SHOW", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)]), for: .normal)
+        }).disposed(by: bag)
+    }
+    
+    private func setShowRe_PasswordButtonAction() async{
+        showRe_PasswordButton.rx.tap
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [ weak self ] _ in
+            guard let self = self else { return }
+            self.Re_PasswordTextField.isSecureTextEntry = !self.Re_PasswordTextField.isSecureTextEntry
+            self.showRe_PasswordButton.setAttributedTitle(NSAttributedString(string: !self.Re_PasswordTextField.isSecureTextEntry ? "HIDE":"SHOW", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)]), for: .normal)
+        }).disposed(by: bag)
+    }
     
 }
 

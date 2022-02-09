@@ -166,6 +166,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         setUserPassword()
         setSignInLayout()
         setRegisterButtonLayout()
+        showPasswordButtonAction()
     }
     
     
@@ -249,6 +250,13 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     }
     
     
+    func showPasswordButtonAction(){
+        showPasswordButton.rx.tap.subscribe(onNext: {[weak self] _ in
+            guard let self = self else { return }
+            self.passwordTextField.isSecureTextEntry = !self.passwordTextField.isSecureTextEntry
+            self.showPasswordButton.setAttributedTitle(NSAttributedString(string: !self.passwordTextField.isSecureTextEntry ? "HIDE":"SHOW", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)]), for: .normal)
+        }).disposed(by: bag)
+    }
     
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  change In UI
